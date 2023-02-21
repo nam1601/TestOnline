@@ -1,0 +1,20 @@
+:root{
+    --primary-color: #277CFB;
+    --header-color: #383D40;
+    --text-color: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow-y: overlay;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}

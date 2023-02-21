@@ -1,0 +1,117 @@
+.wrapper{
+    position: relative;
+    background-color: #383D40;
+    width: 100%;
+    color: #fff;
+    padding: 60px;
+    padding-bottom: 40px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    overflow: visible;
+    margin-top: 300px;
+    .footer{
+        display: flex;
+        width: 1200px;
+        margin: auto;
+        
+        .brand{
+            margin-right: 80px;
+            h2{
+                font-size: 4rem;
+            }
+            h4{
+                text-align: left;
+                margin: 12px 0 20px 0;
+            } 
+            .list-icon{
+                list-style: none;
+                display: flex;
+                li{
+                    margin-right: 8px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+        .info{
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-around;
+            .home{
+                text-align: left;
+                font-size: 1.6rem;
+                h4{
+                    font-size: 2.2rem;
+                    margin-bottom: 24px;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        color: #000;
+        position: absolute;
+        width: 1200px;
+        background-color: #fff;
+        top: -200px;
+        left: 360px;
+
+        display: flex;
+        // justify-content: space-evenly;
+        align-items: center;
+        padding: 72px 100px;
+
+        border-radius: 8px;
+        .desc{
+            width: 450px;
+            text-align: left;
+            h2{
+                font-size: 30px;
+            }
+            p{
+                color: var(--text-color);
+                font-size: 1.6rem;
+            }
+        }
+        .input{
+            flex: 1;
+            input{
+                width: 60%;
+                padding: 16px 8px;
+                border: none;
+                :focus-within{
+                    border: 1px solid var(--primary-color);
+                    & button{
+                        border: 1px solid var(--primary-color);
+                    }
+                }
+            }
+            button{
+                padding: 18px 16px;
+                background-color: var(--primary-color);
+                color: #fff;
+                border: none;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+    .dev-by{
+        margin-top: 80px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+    }
+}
