@@ -20,6 +20,9 @@ import FeatureSlider from '../FeatureSlider/FeatureSlider';
 import person1 from '~/asset/images/TopBSN.png';
 import person2 from '~/asset/images/person2.png';
 import person3 from '~/asset/images/person3.png';
+
+import circle from '~/asset/images/cirlce.png';
+import arrow from '~/asset/images/Arrow.png'
 const cx = classNames.bind(styles);
 const desc1 =
     'Modern consumer trends: Focus on top-selected services. Changings business models to new consumer trench. Appplying the lastest technology';
@@ -123,6 +126,55 @@ function Content() {
                     </span>
                 </div>
             </div>
+            <div className={cx('feature-2')}>
+                <h2 className={cx('feature__title')}>
+                    Outstanding features of the Client App
+                </h2>
+                <div className={cx('feature-block')}>
+                    <img src={iphone} alt="customer" />
+                    <div className={cx('description')}>
+                        <ul className={cx('note-list')}>
+                            <li className={cx('note-item')}>
+                                <img src={circle} alt=""></img>
+                                <span >1</span>
+                                <div className={cx('note-content')}>
+                                    <h4>Search service in just one button</h4>
+                                    <p>Enjoy convenience in just one app.</p>
+                                </div >
+                                <img className={cx('down-arrow')} src={arrow} alt=''/>
+                            </li>
+                            <li className={cx('note-item')}>
+                                <img src={circle} alt=""></img>
+                                <span >2</span>
+                                <div className={cx('note-content')}>
+                                    <h4>Search service in just one button</h4>
+                                    <p>Enjoy convenience in just one app.</p>
+                                </div >
+                                <img className={cx('down-arrow')} src={arrow} alt=''/>
+                            </li>
+                            <li className={cx('note-item')}>
+                                <img src={circle} alt=""></img>
+                                <span >3</span>
+                                <div className={cx('note-content')}>
+                                    <h4>Search service in just one button</h4>
+                                    <p>Enjoy convenience in just one app.</p>
+                                </div >
+                                <img className={cx('down-arrow')} src={arrow} alt=''/>
+                            </li>
+                            <li className={cx('note-item')}>
+                                <img src={circle} alt=""></img>
+                                <span >4</span>
+                                <div className={cx('note-content')}>
+                                    <h4>Search service in just one button</h4>
+                                    <p>Enjoy convenience in just one app.</p>
+                                </div >
+                                <img className={cx('down-arrow')} src={arrow} alt=''/>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div className={cx('feature')}>
                 <div className={cx('description')}>
                     <h2 className={cx('feature__title')}>App for Business</h2>
@@ -189,7 +241,13 @@ function Content() {
                 listItem={ListItem2}
                 haveButton={true}
             />
-            <FeatureSlider title="Top Business" desc={desc2} listItem={ListItem3} isFull={true} perView={3}/>
+            <FeatureSlider
+                title="Top Business"
+                desc={desc2}
+                listItem={ListItem3}
+                isFull={true}
+                perView={3}
+            />
         </div>
     );
 }

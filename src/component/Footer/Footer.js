@@ -61,19 +61,16 @@ function Footer() {
                 </div>
             </div>
             <div className={cx('contact')}>
-            <div className={cx('desc')}>
+                <div className={cx('desc')}>
                     <h2>Contact Us</h2>
-                    <p>
-                        Please connect with us for answers and service
-                        experience completely and completel
-                    </p>
+                    <p>Please connect with us for answers and service experience completely and completel</p>
                 </div>
                 <div className={cx('input')}>
                     <input placeholder="Enter your email for consultation" />
                     <button>Đăng ký</button>
                 </div>
             </div>
-            <p className={cx('dev-by')}>(c) 2023 - Delicious, All rights reserved.</p>
+            <p className={cx('dev-by')}>(c) 2023 - Delicious, All rights reserved</p>
         </div>);
 }
 
